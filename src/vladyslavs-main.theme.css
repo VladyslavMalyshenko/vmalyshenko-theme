@@ -2,7 +2,7 @@
  * @name Vladyslav's Theme
  * @author v.malyshenko
  * @authorId 613300756346306565
- * @version 1.0.1
+ * @version 1.0.2
  * @description Really cool theme for discord.
 */
 
@@ -25,6 +25,7 @@
 	--channeltextarea-background: var(--v-additional-elements) !important;
 	--background-mobile-primary: var(--v-accent-color) !important;
 	--background-mobile-secondary: var(--v-accent-color) !important;
+	--v-avatar-border-radius: 10px;
 	--text-muted: var(--v-text-color) !important;
 	--header-secondary: var(--v-text-color) !important;
 	--green-360: var(--v-status-color) !important;
@@ -40,6 +41,7 @@
 	--button-positive-background: var(--v-button) !important;
 	--button-positive-background-hover: var(--v-button-hover) !important;
 	--button-positive-background-active: var(--v-button-hover) !important;
+	--background-message-hover: var(--v-message-hover) !important;
 }
 
 .typeWindows__5fa63 {
@@ -95,6 +97,7 @@
 	--v-status-color: rgb(255, 9, 124);
 	--v-button: rgba(255, 9, 124, 1);
 	--v-button-hover: rgba(168, 0, 79, 1);
+	--v-message-hover: rgba(168, 0, 79, 0.15)
 }
 
 .theme-light {
@@ -105,6 +108,7 @@
 	--v-status-color: rgba(255, 163, 206, 1);
 	--v-button: rgba(255, 163, 206, 1);
 	--v-button-hover: rgba(255, 124, 185, 1);
+	--v-message-hover: rgba(255, 124, 185, 0.15)
 }
 
 .checked__6bdb0 {
@@ -131,8 +135,17 @@
 .chat__52833,
 .sidebar_ded4b5,
 .wrapper_a7e7a8,
-.chatContent__5dca8 {
+.chatContent__5dca8,
+.members__9f47b {
 	border-radius: var(--v-radius-ui, 16px) !important;
+}
+
+.container_b2ce9c {
+	background: transparent;
+}
+
+.member_b44d5d {
+    margin: 10px;
 }
 
 .content_d67847 {
@@ -191,10 +204,95 @@ body {
 	}
 }
 
+
+
+.avatar__08316 {
+	border-radius: var(--v-avatar-border-radius) !important;
+}
+
 .avatar__08316:hover {
 	animation: avatartRotate 0.7s;
 }
-  
+
+.bannerSVGWrapper__3e7b0 mask {
+    display: none;
+}
+
+.avatarWrapper_f77579 {
+	border-radius: var(--v-avatar-border-radius) !important;
+	border: none;
+}
+
+
+.avatar-2Vndt_ {
+	border-width: 6px;
+	border-style: solid;
+	border-color: transparent;
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.avatarWrapper_f77579 {
+	border-radius: 10px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.avatarWrapper_f77579:before, .avatar-3QF_VA:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	right: -8px;
+	top: -8px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent;
+	background: transparent;
+	border-radius: 10px;
+	clip: rect(auto,auto,68px,auto);
+}
+
+.avatarWrapper_f77579 svg foreignObject {
+	mask: none !important;
+	border-radius: var(--v-avatar-border-radius) !important;
+}
+
+.avatarHint__8e5b9 foreignObject {
+	mask: none !important;
+}
+
+.avatarHintInner__3d1c9 {
+	border-radius: var(--v-avatar-border-radius) !important;
+}
+
+.wrapper_edb6e0 svg foreignObject {
+	mask: none !important;
+	border-radius: var(--v-avatar-border-radius) !important;
+}
+
+.avatarSpeaking__61fb1 {
+	border-radius: var(--v-avatar-border-radius) !important;
+}
+
+.wrapper__3af0b foreignObject {
+	mask: none !important;
+	border-radius: var(--v-avatar-border-radius) !important;
+	border: 0px solid transparent;
+	transition: .3s;
+}
+
+.container__590e2,
+.content__23cab {
+	background: transparent !important;
+}
+
+.membersWrap__90226 {
+	height: 100%;
+}
+
 header, h1,
 .nameAndDecorators_e34d47,
 .headerNameWrapper-3res2c,
@@ -223,4 +321,3 @@ header, h1,
 .timestamp_cdbd93 {
 	font-family: var(--v-font-header), 'sans-serif' !important;
 }
-
