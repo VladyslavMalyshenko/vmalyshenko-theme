@@ -6,135 +6,142 @@
  * @description Really cool theme for discord.
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-	--v-app-offset: 100px;
-  	--v-font-header: 'Comfortaa';
-	--v-ui-transparency: 0.4;
-	--v-radius-ui: 16px;
-	--v-margin-top: calc(var(--v-app-offset) / 2);
-	--v-ui-gap-between: 15px;
-	--v-call-background: transparent;
-  	--v-background: url(https://windowscustomization.com/wp-content/uploads/2019/06/Somewhere-Down-the-Line.gif);
-	--background-primary: var(--v-accent-color) !important;
-	--background-secondary: var(--v-accent-color) !important;
-	--channelbodyarea-background: var(--v-accent-color) !important;
-	--background-tertiary: var(--v-accent-color) !important;
-	--background-secondary-alt: var(--v-additional-elements) !important;
-	--channeltextarea-background: var(--v-additional-elements) !important;
-	--background-mobile-primary: var(--v-accent-color) !important;
-	--background-mobile-secondary: var(--v-accent-color) !important;
-	--v-avatar-border-radius: 10px;
-	--text-muted: var(--v-text-color) !important;
-	--header-secondary: var(--v-text-color) !important;
-	--green-360: var(--v-status-color) !important;
-	--text-positive: var(--v-status-color) !important;
-	--status-positive: var(--v-status-color) !important;
-	--brand-experiment: var(--v-button-hover) !important;
-	--brand-experiment-600: var(--v-button-hover) !important;
-	--brand-experiment-560: var(--v-text-color) !important;
-	--brand-experiment-160: var(--v-button) !important;
-	--mention-foreground: var(--v-button) !important;
-	--mention-background: var(--v-button-hover) !important;
-	--control-brand-foreground: var(--v-status-color) !important;
-	--button-positive-background: var(--v-button) !important;
-	--button-positive-background-hover: var(--v-button-hover) !important;
-	--button-positive-background-active: var(--v-button-hover) !important;
-	--background-message-hover: var(--v-message-hover) !important;
-	--text-link: var(--v-status-color) !important;
-	--brand-500: var(--v-status-color) !important;
+    --v-app-offset: 100px;
+    --v-font-header: "Comfortaa";
+    --v-ui-transparency: 0.4;
+    --v-radius-ui: 16px;
+    --v-margin-top: calc(var(--v-app-offset) / 2);
+    --v-ui-gap-between: 15px;
+    --v-call-background: transparent;
+    --v-background: url(https://windowscustomization.com/wp-content/uploads/2019/06/Somewhere-Down-the-Line.gif);
+    --background-primary: var(--v-accent-color) !important;
+    --background-secondary: var(--v-accent-color) !important;
+    --channelbodyarea-background: var(--v-accent-color) !important;
+    --background-tertiary: var(--v-accent-color) !important;
+    --background-secondary-alt: var(--v-additional-elements) !important;
+    --channeltextarea-background: var(--v-additional-elements) !important;
+    --background-mobile-primary: var(--v-accent-color) !important;
+    --background-mobile-secondary: var(--v-accent-color) !important;
+    --v-avatar-border-radius: 10px;
+    --text-muted: var(--v-text-color) !important;
+    --header-secondary: var(--v-text-color) !important;
+    --green-360: var(--v-status-color) !important;
+    --text-positive: var(--v-status-color) !important;
+    --status-positive: var(--v-status-color) !important;
+    --brand-experiment: var(--v-button-hover) !important;
+    --brand-experiment-600: var(--v-button-hover) !important;
+    --brand-experiment-560: var(--v-text-color) !important;
+    --brand-experiment-160: var(--v-button) !important;
+    --mention-foreground: var(--v-button) !important;
+    --mention-background: var(--v-button-hover) !important;
+    --control-brand-foreground: var(--v-status-color) !important;
+    --button-positive-background: var(--v-button) !important;
+    --button-positive-background-hover: var(--v-button-hover) !important;
+    --button-positive-background-active: var(--v-button-hover) !important;
+    --background-message-hover: var(--v-message-hover) !important;
+    --text-link: var(--v-status-color) !important;
+    --brand-500: var(--v-status-color) !important;
+    --brand-experiment-80a: var(--v-message-hover) !important;
 }
 
 .typeWindows__5fa63 {
-	background-color: var(--v-accent-color) !important;
-	border-radius: var(--v-radius-ui, 16px) !important;
-	height: 20px !important;
-	padding-bottom: 4px !important;
-	position: relative !important;
-	align-items: center !important;
+    background-color: var(--v-accent-color) !important;
+    border-radius: var(--v-radius-ui, 16px) !important;
+    height: 20px !important;
+    padding-bottom: 4px !important;
+    position: relative !important;
+    align-items: center !important;
 }
 .withFrame__485f4 {
-	margin-top: var(--v-margin-top) !important;;
+    margin-top: var(--v-margin-top) !important;
 }
 .wordmark__0d178 svg {
-	display: none;
+    display: none;
 }
 
 .winButton__88672 {
-	height: 24px !important;
-	top: 2px !important;
+    height: 24px !important;
+    top: 2px !important;
 }
 .winButtonClose__73489 {
-	border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 .wordmark__0d178 {
-	display: none;
+    display: none;
 }
 
 .theme-light .wordmark__0d178 {
-	filter: brightness(0);
+    filter: brightness(0);
 }
 
 .theme-light .theme-dark .wordmark__0d178 {
-	filter: none;
+    filter: none;
 }
 
 .lookFilled__19298.colorBrand_b2253e:hover {
-	background-color: var(--v-button-hover) !important;;
+    background-color: var(--v-button-hover) !important;
 }
 
 .appAsidePanelWrapper__714a6 {
-	border-radius: var(--v-radius-ui, 16px) !important;
-	padding: var(--v-app-offset, 0);
-	box-sizing: border-box;
+    border-radius: var(--v-radius-ui, 16px) !important;
+    padding: var(--v-app-offset, 0);
+    box-sizing: border-box;
 }
 
 .theme-dark {
-	--v-accent-color: rgba(56, 56, 56, var(--v-ui-transparency));
-	--v-accent-additional-color: rgba(128, 128, 128, var(--v-ui-transparency));
-	--v-text-color: rgb(255, 255, 255);
-	--v-additional-elements: rgb(136, 66, 99);
-	--v-status-color: rgb(255, 9, 124);
-	--v-button: rgba(255, 9, 124, 1);
-	--v-button-hover: rgba(168, 0, 79, 1);
-	--v-message-hover: rgba(168, 0, 79, 0.15)
+    --v-accent-color: rgba(56, 56, 56, var(--v-ui-transparency));
+    --v-accent-additional-color: rgba(128, 128, 128, var(--v-ui-transparency));
+    --v-text-color: rgb(255, 255, 255);
+    --v-additional-elements: rgb(136, 66, 99);
+    --v-status-color: rgb(255, 9, 124);
+    --v-button: rgba(255, 9, 124, 1);
+    --v-button-hover: rgba(168, 0, 79, 1);
+    --v-message-hover: rgba(168, 0, 79, 0.15);
 }
 
 .theme-light {
-	--v-accent-color: rgba(255, 255, 255, var(--v-ui-transparency));
-	--v-accent-additional-color: rgba(128, 128, 128, var(--v-ui-transparency));
-	--v-text-color: rgb(0, 0, 0);
-	--v-additional-elements: rgb(255, 109, 177);
-	--v-status-color: rgba(255, 163, 206, 1);
-	--v-button: rgba(255, 163, 206, 1);
-	--v-button-hover: rgba(255, 124, 185, 1);
-	--v-message-hover: rgba(255, 124, 185, 0.15)
+    --v-accent-color: rgba(255, 255, 255, var(--v-ui-transparency));
+    --v-accent-additional-color: rgba(128, 128, 128, var(--v-ui-transparency));
+    --v-text-color: rgb(0, 0, 0);
+    --v-additional-elements: rgb(255, 109, 177);
+    --v-status-color: rgba(255, 163, 206, 1);
+    --v-button: rgba(255, 163, 206, 1);
+    --v-button-hover: rgba(255, 124, 185, 1);
+    --v-message-hover: rgba(255, 124, 185, 0.15);
+    --v-message-mention-background: rgba(255, 124, 185, 0.35);
+    --v-message-mention-background-hover: rgba(255, 124, 185, 0.45);
 }
 
 .checked__6bdb0 {
-	background-color: var(--v-status-color) !important;
+    background-color: var(--v-status-color) !important;
 }
 
 .checked__6bdb0 .slider__41d94 svg path {
-	fill: var(--v-status-color) !important;
+    fill: var(--v-status-color) !important;
 }
 
 .content__4bf10,
 .container__037ed,
 .chat__52833,
 .content__1a4fe {
-	gap: var(--v-ui-gap-between, 0);
-	background: transparent !important;
+    gap: var(--v-ui-gap-between, 0);
+    background: transparent !important;
 }
 
 .wrapper_bd2abe {
-	border-radius: var(--v-radius-ui) !important;
+    border-radius: var(--v-radius-ui) !important;
 }
 
 .callContainer_cbde45 {
-	background: var(--v-call-background, transparent) !important;
+    background: var(--v-call-background, transparent) !important;
+}
+
+.wrapper_a7e7a8 {
+    height: 100%;
 }
 
 .container__93316,
@@ -144,11 +151,15 @@
 .chatContent__5dca8,
 .members__9f47b,
 .container__11d72 {
-	border-radius: var(--v-radius-ui, 16px) !important;
+    border-radius: var(--v-radius-ui, 16px) !important;
+}
+
+.categoryFadeBlurple_e73c11:hover {
+    background: var(--v-status-color) !important;
 }
 
 .container_b2ce9c {
-	background: transparent;
+    background: transparent;
 }
 
 .member_b44d5d {
@@ -156,24 +167,24 @@
 }
 
 .content_d67847 {
-	background: var(--v-accent-additional-color) !important;
+    background: var(--v-accent-additional-color) !important;
 }
 
-.theme-dark .layer-1Ixpg3 .theme-light { /* the ones i actually need */
-	--header-primary: #060607;
-	--header-secondary: #4f5660;
-	--text-normal: #2e3338;
-	--interactive-normal: #4f5660;
+.theme-dark .layer-1Ixpg3 .theme-light {
+    --header-primary: #060607;
+    --header-secondary: #4f5660;
+    --text-normal: #2e3338;
+    --interactive-normal: #4f5660;
 }
 
 #app-mount {
-	background: var(--v-background) !important;
-	background-size: cover !important;
-	background-position: center !important;
+    background: var(--v-background) !important;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 body {
-	background-color: var(--v-accent-color);
+    background-color: var(--v-accent-color);
 }
 
 .appMount_fae9dd,
@@ -181,44 +192,41 @@ body {
 .bg__7adbf,
 .bg__12180,
 .app_de4237 {
-	background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 .bd-transparency,
-.bd-transparency
-#app-mount {
-	background: transparent !important;
+.bd-transparency #app-mount {
+    background: transparent !important;
 }
 
 .theme-light .emoji,
 .theme-light .emoji.jumboable {
-  	filter: drop-shadow(0 0 1px #00000055);
+    filter: drop-shadow(0 0 1px #00000055);
 }
 .bd-pfbtn,
 .bda-settings-button,
 .wrapper-22ayhK,
 .rtc-connection-status {
-	padding-bottom: 2px;
+    padding-bottom: 2px;
 }
 
 @keyframes avatartRotate {
-	0% {
-	  transform: rotate(0deg);
-	}
+    0% {
+        transform: rotate(0deg);
+    }
 
-	100% {
-	  transform: rotate(360deg);
-	}
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-
-
 .avatar__08316 {
-	border-radius: var(--v-avatar-border-radius) !important;
+    border-radius: var(--v-avatar-border-radius) !important;
 }
 
 .avatar__08316:hover {
-	animation: avatartRotate 0.7s;
+    animation: avatartRotate 0.7s;
 }
 
 .bannerSVGWrapper__3e7b0 mask {
@@ -226,107 +234,149 @@ body {
 }
 
 .avatarWrapper_f77579 {
-	border-radius: var(--v-avatar-border-radius) !important;
-	border: none;
+    border-radius: var(--v-avatar-border-radius) !important;
+    border: none;
 }
 
-
 .avatar-2Vndt_ {
-	border-width: 6px;
-	border-style: solid;
-	border-color: transparent;
-	border-radius: 10px;
-	background-color: transparent;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: transparent;
 }
 
 .avatarWrapper_f77579 {
-	border-radius: 10px;
-	border-width: 8px;
-	border-style: solid;
-	border-color: transparent;
-	background-color: transparent;
+    border-radius: 10px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
 }
 
-.avatarWrapper_f77579:before, .avatar-3QF_VA:before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	right: -8px;
-	top: -8px;
-	border-width: 8px;
-	border-style: solid;
-	border-color: transparent;
-	background: transparent;
-	border-radius: 10px;
-	clip: rect(auto,auto,68px,auto);
+.avatarWrapper_f77579:before,
+.avatar-3QF_VA:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -8px;
+    top: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent;
+    background: transparent;
+    border-radius: 10px;
+    clip: rect(auto, auto, 68px, auto);
 }
-
 
 /* Christmas update :3 */
 
-.userPopoutInner_f545a3::after {
-	content: " ";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: url(https://www.animationsoftware7.com/img/agifs/snow02.gif);
-	background-size: cover;
-	pointer-events: none;
+/* .userPopoutInner_f545a3::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://www.animationsoftware7.com/img/agifs/snow02.gif);
+    background-size: cover;
+    pointer-events: none;
 }
 
 .avatarWrapper_f77579::after {
-	content: " ";
-	width: 75px;
-	height: 75px;
-	position: absolute;
-	top: -35%;
-	right: -10px;
-	background: url(https://i.pinimg.com/originals/af/a6/55/afa655cd471aee57e0b923b90e5d57bf.png);
-	background-size: cover;
-}
+    content: " ";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -35%;
+    right: -10px;
+    background: url(https://i.pinimg.com/originals/af/a6/55/afa655cd471aee57e0b923b90e5d57bf.png);
+    background-size: cover;
+} */
 
 /* End */
 
 .avatarWrapper_f77579 svg foreignObject {
-	mask: none !important;
-	border-radius: var(--v-avatar-border-radius) !important;
+    mask: none !important;
+    border-radius: var(--v-avatar-border-radius) !important;
 }
 
 .avatarHint__8e5b9 foreignObject {
-	mask: none !important;
+    mask: none !important;
 }
 
 .avatarHintInner__3d1c9 {
-	border-radius: var(--v-avatar-border-radius) !important;
+    border-radius: var(--v-avatar-border-radius) !important;
 }
 
 .wrapper_edb6e0 svg foreignObject {
-	mask: none !important;
-	border-radius: var(--v-avatar-border-radius) !important;
+    mask: none !important;
+    border-radius: var(--v-avatar-border-radius) !important;
 }
 
 .avatarSpeaking__61fb1 {
-	border-radius: var(--v-avatar-border-radius) !important;
+    border-radius: var(--v-avatar-border-radius) !important;
 }
 
 .wrapper__3af0b foreignObject {
-	mask: none !important;
-	border-radius: var(--v-avatar-border-radius) !important;
-	border: 0px solid transparent;
-	transition: .3s;
+    mask: none !important;
+    border-radius: var(--v-avatar-border-radius) !important;
+    border: 0 solid transparent;
+    transition: 0.3s;
 }
 
 .container__590e2,
 .content__23cab {
-	background: transparent !important;
+    background: transparent !important;
 }
 
 .membersWrap__90226 {
-	height: 100%;
+    height: 100%;
 }
 
-header, h1,
+.lookFilled__19298.colorGreen__5f181,
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542 {
+    background: var(--v-button);
+    transition: 0.3s;
+}
+
+.lookFilled__19298.colorGreen__5f181:hover,
+.lookFilled__19298.colorGreen__5f181.active,
+.tabBar__73938 .addFriend__80542.addFriend__80542.addFriend__80542:hover {
+    background: var(--v-button-hover);
+}
+
+.tabBar__73938
+    .addFriend__80542.addFriend__80542.addFriend__80542[aria-selected="true"] {
+    color: var(--v-button);
+}
+
+.markup_a7e664 a {
+    background-color: #00000025;
+    padding: 1px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.markup_a7e664 a:hover {
+    background-color: #00000055;
+}
+
+.mentioned__58017 {
+    background: var(--v-message-mention-background);
+    transition: 0.3s;
+}
+
+.mentioned__58017:before {
+    background: var(--v-additional-elements);
+}
+
+.message__80c10.mentioned__58017.selected_fd9051,
+.mouse-mode.full-motion .mentioned__58017:hover {
+    background: var(--v-message-mention-background-hover);
+}
+
+header,
+h1,
 .nameAndDecorators_e34d47,
 .headerNameWrapper-3res2c,
 .username_d30d99,
@@ -339,7 +389,8 @@ header, h1,
 .userHook-3AdCBF,
 .secondaryHeader-2oeRPO,
 .roleName_d19d33,
-.roleName-35qCvR, .roleName-3910zV,
+.roleName-35qCvR,
+.roleName-3910zV,
 .membersGroup__85843,
 .roleRow-3HnunM,
 .roleMention__02469,
@@ -350,7 +401,8 @@ header, h1,
 .name__8d1ec,
 .title__9e2b0,
 .title-3hptVQ,
-.bd-author, .bd-meta .bd-link,
+.bd-author,
+.bd-meta .bd-link,
 .timestamp_cdbd93 {
-	font-family: var(--v-font-header), 'sans-serif' !important;
+    font-family: var(--v-font-header), "sans-serif" !important;
 }
