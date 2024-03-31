@@ -8,90 +8,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-:root {
-    --v-app-offset: 100px;
-    --v-font-header: "Comfortaa";
-    --v-ui-transparency: 0.4;
-    --v-radius-ui: 16px;
-    --v-margin-top: calc(var(--v-app-offset) / 2);
-    --v-ui-gap-between: 15px;
-    --v-call-background: transparent;
-    --v-background: url(https://windowscustomization.com/wp-content/uploads/2019/06/Somewhere-Down-the-Line.gif);
-    --background-primary: var(--v-accent-color) !important;
-    --background-secondary: var(--v-accent-color) !important;
-    --channelbodyarea-background: var(--v-accent-color) !important;
-    --background-tertiary: var(--v-accent-color) !important;
-    --background-secondary-alt: var(--v-additional-elements) !important;
-    --channeltextarea-background: var(--v-additional-elements) !important;
-    --background-mobile-primary: var(--v-accent-color) !important;
-    --background-mobile-secondary: var(--v-accent-color) !important;
-    --v-avatar-border-radius: 10px;
-    --text-muted: var(--v-text-color) !important;
-    --header-secondary: var(--v-text-color) !important;
-    --green-360: var(--v-status-color) !important;
-    --text-positive: var(--v-status-color) !important;
-    --status-positive: var(--v-status-color) !important;
-    --brand-experiment: var(--v-button-hover) !important;
-    --brand-experiment-600: var(--v-button-hover) !important;
-    --brand-experiment-560: var(--v-text-color) !important;
-    --brand-experiment-160: var(--v-button) !important;
-    --mention-foreground: var(--v-button) !important;
-    --mention-background: var(--v-button-hover) !important;
-    --control-brand-foreground: var(--v-status-color) !important;
-    --button-positive-background: var(--v-button) !important;
-    --button-positive-background-hover: var(--v-button-hover) !important;
-    --button-positive-background-active: var(--v-button-hover) !important;
-    --background-message-hover: var(--v-message-hover) !important;
-    --text-link: var(--v-status-color) !important;
-    --brand-500: var(--v-status-color) !important;
-    --brand-experiment-80a: var(--v-message-hover) !important;
-}
-
-.typeWindows__5fa63 {
-    background-color: var(--v-accent-color) !important;
-    border-radius: var(--v-radius-ui, 16px) !important;
-    height: 20px !important;
-    padding-bottom: 4px !important;
-    position: relative !important;
-    align-items: center !important;
-}
-.withFrame__485f4 {
-    margin-top: var(--v-margin-top) !important;
-}
-.wordmark__0d178 svg {
-    display: none;
-}
-
-.winButton__88672 {
-    height: 24px !important;
-    top: 2px !important;
-}
-.winButtonClose__73489 {
-    border-radius: 0 10px 10px 0;
-}
-
-.wordmark__0d178 {
-    display: none;
-}
-
-.theme-light .wordmark__0d178 {
-    filter: brightness(0);
-}
-
-.theme-light .theme-dark .wordmark__0d178 {
-    filter: none;
-}
-
-.lookFilled__19298.colorBrand_b2253e:hover {
-    background-color: var(--v-button-hover) !important;
-}
-
-.appAsidePanelWrapper__714a6 {
-    border-radius: var(--v-radius-ui, 16px) !important;
-    padding: var(--v-app-offset, 0);
-    box-sizing: border-box;
-}
-
+/* Differen theme variables */
 .theme-dark {
     --v-accent-color: rgba(56, 56, 56, var(--v-ui-transparency));
     --v-accent-additional-color: rgba(128, 128, 128, var(--v-ui-transparency));
@@ -116,6 +33,92 @@
     --v-message-mention-background-hover: rgba(255, 124, 185, 0.45);
 }
 
+.theme-dark,
+.theme-light {
+    --v-app-offset: 100px;
+    --v-font-header: "Comfortaa";
+    --v-ui-transparency: 0.4;
+    --v-radius-ui: 16px;
+    --v-margin-top: calc(var(--v-app-offset) / 2);
+    --v-ui-gap-between: 15px;
+    --v-call-background: transparent;
+    --v-background: url(https://windowscustomization.com/wp-content/uploads/2019/06/Somewhere-Down-the-Line.gif);
+    --background-primary: var(--v-accent-color) !important;
+    --background-secondary: var(--v-accent-color) !important;
+    --channelbodyarea-background: var(--v-accent-color) !important;
+    --background-tertiary: var(--v-accent-color) !important;
+    --channeltextarea-background: var(--v-additional-elements) !important;
+    --background-mobile-primary: var(--v-accent-color) !important;
+    --background-mobile-secondary: var(--v-accent-color) !important;
+    --v-avatar-border-radius: 10px;
+    --text-muted: var(--v-text-color) !important;
+    --header-secondary: var(--v-text-color) !important;
+    --green-360: var(--v-status-color) !important;
+    --text-positive: var(--v-status-color) !important;
+    --status-positive: var(--v-status-color) !important;
+    --brand-experiment: var(--v-button) !important;
+    --brand-experiment-600: var(--v-button-hover) !important;
+    --brand-experiment-560: var(--v-button-hover) !important;
+    --brand-experiment-160: var(--v-button) !important;
+    --mention-foreground: var(--v-button) !important;
+    --mention-background: var(--v-button-hover) !important;
+    --control-brand-foreground: var(--v-status-color) !important;
+    --button-positive-background: var(--v-button) !important;
+    --button-positive-background-hover: var(--v-button-hover) !important;
+    --button-positive-background-active: var(--v-button-hover) !important;
+    --background-message-hover: var(--v-message-hover) !important;
+    --text-link: var(--v-status-color) !important;
+    --brand-500: var(--v-status-color) !important;
+    --brand-experiment-80a: var(--v-message-hover) !important;
+    --status-positive-background: var(--green-360) !important;
+    --channel-icon: var(--v-accent-color) !important;
+    --interactive-active: var(--v-status-color) !important;
+    --interactive-hover: var(--v-additional-elements) !important;
+    --interactive-muted: var(--primary-300);
+    --interactive-normal: var(--v-text-color);
+    --channels-default: var(--v-text-color);
+    --background-modifier-selected: var(
+        --v-message-mention-background
+    ) !important;
+    --background-modifier-active: var(
+        --v-message-mention-background
+    ) !important;
+    --background-modifier-hover: var(--v-message-hover) !important;
+
+    --text-normal: var(--v-text-color) !important;
+    --input-background: var(--v-accent-color) !important;
+}
+
+/* Window top bar */
+.typeWindows__5fa63 {
+    background-color: var(--v-accent-color) !important;
+    border-radius: var(--v-radius-ui, 16px) !important;
+    height: 20px !important;
+    padding-bottom: 4px !important;
+    position: relative !important;
+    align-items: center !important;
+}
+
+/* Top layer */
+.appAsidePanelWrapper__5e6e2 {
+    padding: var(--v-app-offset, 0);
+    box-sizing: border-box;
+}
+
+.container_d1f8f5 {
+    border-radius: var(--v-radius-ui, 16px) !important;
+    overflow: hidden;
+}
+
+/* Server members sidebar */
+.membersWrap__5ca6b {
+    height: 100%;
+}
+
+.content__690c5 {
+    height: auto !important;
+}
+
 .checked__6bdb0 {
     background-color: var(--v-status-color) !important;
 }
@@ -124,10 +127,70 @@
     fill: var(--v-status-color) !important;
 }
 
+/* Preventing styles */
+
+.container_debb33 {
+    background: var(--v-additional-elements) !important;
+}
+
+.privateChannels__9b518,
+.container__7e23c,
+.container_f79ab4,
+.scroller__89969,
+.nowPlayingColumn_b025fe,
+.fieldList__4e6dd,
+.member_b44d5d {
+    background: transparent !important;
+}
+
+.title_d4ba1a,
+.container_f79ab4,
+.chatContent_f087cb,
+.sidebar_e031be,
+.wrapper__216eb,
+.container__26baa,
+.peopleColumn__0c784,
+.nowPlayingColumn_b025fe,
+.pageWrapper_c182d3,
+.scroller__32e73,
+.membersWrap__5ca6b,
+.profilePanel_e2cafe,
+.contentRegion__08eba,
+.sidebarRegion__36437 {
+    overflow: hidden;
+    border-radius: var(--v-radius-ui, 16px) !important;
+}
+
+.scroller_d4b86c,
+.standardSidebarView__12528 {
+    border-radius: var(--v-radius-ui, 16px) !important;
+}
+
+.sidebar__02e8d {
+    padding: 60px 0;
+}
+
+/* Preventing styles end */
+
+.children_cde9af::after {
+    display: none;
+}
+
+.peopleColumn__0c784 {
+    background: var(--bg-overlay-3, var(--background-secondary));
+}
+
+/* Gap betwenn ui */
 .content__4bf10,
 .container__037ed,
 .chat__52833,
-.content__1a4fe {
+.content__1a4fe,
+.content__76dcf,
+.container_d1f8f5,
+.content__01e65,
+.container_bd15da,
+.tabBody_a90ea8,
+.standardSidebarView__12528 {
     gap: var(--v-ui-gap-between, 0);
     background: transparent !important;
 }
@@ -154,11 +217,59 @@
     border-radius: var(--v-radius-ui, 16px) !important;
 }
 
+/* User */
+.avatarWrapperNormal__36eec,
+.avatarHoverTarget__9b4a9,
+.wrapper__3ed10,
+.avatar__08316 {
+    overflow: hidden;
+    border-radius: var(--v-avatar-border-radius, 8px);
+}
+
+.mask_d5067d circle,
+.bannerSVGWrapper__8a38c mask circle {
+    display: none;
+    fill: none;
+}
+
+.wrapper__3ed10 {
+    background: var(--v-status-color);
+}
+
+.avatarHint__15059 foreignObject,
+.mask_d5067d foreignObject {
+    mask: none !important;
+}
+
+/* User pop out */
+.scroller_f9a667 {
+    max-height: 500px;
+}
+/* User pop out end */
+
+@keyframes avatartRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.avatar__08316:hover {
+    animation: avatartRotate 0.7s;
+}
+
+/* User end */
+
 .categoryFadeBlurple_e73c11:hover {
     background: var(--v-status-color) !important;
 }
 
-.container_b2ce9c {
+.container_b2ce9c,
+.layer_f7d46a,
+.contentRegion__08eba {
     background: transparent;
 }
 
@@ -209,65 +320,6 @@ body {
 .wrapper-22ayhK,
 .rtc-connection-status {
     padding-bottom: 2px;
-}
-
-@keyframes avatartRotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.avatar__08316 {
-    border-radius: var(--v-avatar-border-radius) !important;
-}
-
-.avatar__08316:hover {
-    animation: avatartRotate 0.7s;
-}
-
-.bannerSVGWrapper__3e7b0 mask {
-    display: none;
-}
-
-.avatarWrapper_f77579 {
-    border-radius: var(--v-avatar-border-radius) !important;
-    border: none;
-}
-
-.avatar-2Vndt_ {
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-.avatarWrapper_f77579 {
-    border-radius: 10px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent;
-    background-color: transparent;
-}
-
-.avatarWrapper_f77579:before,
-.avatar-3QF_VA:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    right: -8px;
-    top: -8px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent;
-    background: transparent;
-    border-radius: 10px;
-    clip: rect(auto, auto, 68px, auto);
 }
 
 /* Christmas update :3 */
