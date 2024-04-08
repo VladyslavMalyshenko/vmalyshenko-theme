@@ -18,6 +18,12 @@
     --v-button: rgba(255, 9, 124, 1);
     --v-button-hover: rgba(168, 0, 79, 1);
     --v-message-hover: rgba(168, 0, 79, 0.15);
+    --v-icon-color: rgb(0, 0, 0);
+    --v-speaker-color: linear-gradient(
+        to right,
+        rgba(168, 0, 79, 1),
+        rgb(53, 0, 114)
+    );
 }
 
 .theme-light {
@@ -31,6 +37,12 @@
     --v-message-hover: rgba(255, 124, 185, 0.15);
     --v-message-mention-background: rgba(255, 124, 185, 0.35);
     --v-message-mention-background-hover: rgba(255, 124, 185, 0.45);
+    --v-icon-color: rgba(255, 255, 255, var(--v-ui-transparency));
+    --v-speaker-color: linear-gradient(
+        to right,
+        rgb(255, 109, 177),
+        rgb(119, 0, 255)
+    );
 }
 
 .theme-dark,
@@ -42,7 +54,9 @@
     --v-margin-top: calc(var(--v-app-offset) / 2);
     --v-ui-gap-between: 15px;
     --v-call-background: transparent;
-    --v-background: url(https://windowscustomization.com/wp-content/uploads/2019/06/Somewhere-Down-the-Line.gif);
+    --v-background: url(./bg_1.gif);
+    --v-avatar-border-radius: 10px;
+
     --background-primary: var(--v-accent-color) !important;
     --background-secondary: var(--v-accent-color) !important;
     --channelbodyarea-background: var(--v-accent-color) !important;
@@ -50,7 +64,6 @@
     --channeltextarea-background: var(--v-additional-elements) !important;
     --background-mobile-primary: var(--v-accent-color) !important;
     --background-mobile-secondary: var(--v-accent-color) !important;
-    --v-avatar-border-radius: 10px;
     --text-muted: var(--v-text-color) !important;
     --header-secondary: var(--v-text-color) !important;
     --green-360: var(--v-status-color) !important;
@@ -71,12 +84,15 @@
     --brand-500: var(--v-status-color) !important;
     --brand-experiment-80a: var(--v-message-hover) !important;
     --status-positive-background: var(--green-360) !important;
-    --channel-icon: var(--v-accent-color) !important;
+
+    --channel-icon: var(--v-icon-color) !important;
+
     --interactive-active: var(--v-status-color) !important;
     --interactive-hover: var(--v-additional-elements) !important;
     --interactive-muted: var(--primary-300);
     --interactive-normal: var(--v-text-color);
     --channels-default: var(--v-text-color);
+
     --background-modifier-selected: var(
         --v-message-mention-background
     ) !important;
@@ -99,6 +115,11 @@
     align-items: center !important;
 }
 
+/* Noice reducer test */
+.container_ced194 {
+    background: var(--v-speaker-color) !important;
+}
+
 /* Top layer */
 .appAsidePanelWrapper__5e6e2 {
     padding: var(--v-app-offset, 0);
@@ -111,6 +132,10 @@
 }
 
 /* Server members sidebar */
+.ownerIcon_bd8e7d {
+    color: var(--v-icon-color) !important;
+}
+
 .membersWrap__5ca6b {
     height: 100%;
 }
@@ -128,6 +153,10 @@
 }
 
 /* Preventing styles */
+
+.overlap__6969e .avatar_a56eee {
+    border: none;
+}
 
 .container_debb33 {
     background: var(--v-additional-elements) !important;
@@ -156,7 +185,8 @@
 .membersWrap__5ca6b,
 .profilePanel_e2cafe,
 .contentRegion__08eba,
-.sidebarRegion__36437 {
+.sidebarRegion__36437,
+.avatarHint__15059 {
     overflow: hidden;
     border-radius: var(--v-radius-ui, 16px) !important;
 }
@@ -171,6 +201,21 @@
 }
 
 /* Preventing styles end */
+
+.button_b82d53 .buttonColor__7bad9.buttonActive_ae686f,
+.button_b82d53.buttonColor__7bad9.buttonActive_ae686f,
+.button_b82d53 .buttonColor__7bad9.buttonActive_ae686f:hover,
+.button_b82d53.buttonColor__7bad9.buttonActive_ae686f:hover {
+    background-color: var(--v-button-hover);
+}
+
+.container__2ed72.checked__36fdc {
+    background-color: var(--v-button) !important;
+}
+
+.container__2ed72.checked__36fdc .slider__41d94 svg path {
+    fill: var(--v-button) !important;
+}
 
 .children_cde9af::after {
     display: none;
@@ -218,10 +263,12 @@
 }
 
 /* User */
-.avatarWrapperNormal__36eec,
-.avatarHoverTarget__9b4a9,
-.wrapper__3ed10,
-.avatar__08316 {
+.avatarStack__789b4,
+.avatar__08316,
+.userAvatar_f45224,
+.avatar_a56eee,
+.avatarSmall__85dc8,
+.avatarSpeaking__747a1 {
     overflow: hidden;
     border-radius: var(--v-avatar-border-radius, 8px);
 }
@@ -247,7 +294,7 @@
 }
 /* User pop out end */
 
-@keyframes avatartRotate {
+@keyframes avatarRotate {
     0% {
         transform: rotate(0deg);
     }
@@ -257,8 +304,9 @@
     }
 }
 
-.avatar__08316:hover {
-    animation: avatartRotate 0.7s;
+.avatar__08316:hover,
+.avatar__08316:hover + .avatarDecoration__8a0c2 {
+    animation: avatarRotate 0.7s;
 }
 
 /* User end */
